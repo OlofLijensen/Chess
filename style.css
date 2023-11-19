@@ -1,26 +1,61 @@
-.titlediv {
-    border: 1px solid black;
+.sidbar {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 0px;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(102, 153, 102);
+}
+
+.sidbarelements{
+    margin: 100px;
+    position: absolute;
+    padding: auto;
+    height: 100%;
+    width: 100%;
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 30px;
+    top: 100px;
+}
+.sidbarelements a{
+    text-decoration: none;
+    color: white;
 }
 
-.title{
-    border: 1px solid black;
+.Closer{
+    position: absolute;
+    left: 180px;
+    text-decoration: none;
+    color: white;
 }
 
-.menubut{
-    border: 1px solid black;
+.Title{
+    display: grid;
+    place-items: center;
+    background: rgb(102, 102, 102);
+    height: 200px;
+    font-size: 40px;
+    color: white;
 }
 
-.menubutton{
-    align-items: center;
-    align-self: center;
-    border: 1px solid black;
-    margin: auto;
+.Title h{
+    border: 4px solid white;
+    padding: 20px;
 }
-.card{
-    margin: 20px;
-    text-align: center;
+
+.OpenButton{
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    border: 2px solid rgb(102, 102, 102);
+}
+
+.card-img-top{
+    width: 400px;
+    height: 300px;
+}
+
+.card {
+    z-index: -1;
 }
