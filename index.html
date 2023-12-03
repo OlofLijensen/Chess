@@ -15,98 +15,48 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+  
   <!--First "row" of the page and its content-->
   <div class="row">
     <!--Title head-->
-    <!--Open sider bar button calling js function-->
     <div class="Title">
       <div>
-        <div><h>Commie Chess</h></div>
+        <div><h>Anarcho-chess!</h></div>
       </div>
-
     </div>
+  </div>
 
-    <!--A button thats positoned abs and opens the side bar-->
-    <div>
-      <button class="OpenButton" onclick="Openfunction()">Open sidbar</button>
+  <!--Cards med en knapp för att see mer-->
+    <div class="row function justify-content-center">
+      <div class="col-xl-3">
+        <div class="card">
+          <a href="offen.html">
+          <img src="Pics/nedladdning (1).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Play chess!</h5>
+          </div>
+          </a>
+        </div>
+      </div>
     </div>
+  
+  <!--A button thats positoned abs and opens the side bar-->
+  <div>
+    <button class="OpenButton" onclick="Openfunction()">Open sidbar</button>
+  </div>
 
     <!--side bar conten is not seen since it is out of div-->
-    <div class="sidbar h-100%" id="Menu">
+  <div class="sidbar h-100%" id="Menu">
 
 
-      <!--x which closes the side bar calling a secound function-->
-      <a href="#" id="MenuClose" class="Closer" onclick="Closefunction()">&times</a>
+    <!--x which closes the side bar calling a secound function-->
+    <a href="#" id="MenuClose" class="Closer" onclick="Closefunction()">&times</a>
 
-      <!--Side bar items could perhaps instead of seperate divs use list-->
-      <div class="sidbarelements"id="Menu2">
-        <div><a href="#">a</a></div>
-        <div><a href="#">a</a></div>
-        <div><a href="#">a</a></div>
-      </div>
+    <!--Side bar items could perhaps instead of seperate divs use list-->
+    <div class="sidbarelements"id="Menu2">
+      <div><a href="#">secret1</a></div>
+      <div><a href="#">secret2</a></div>
+      <div><a href="#">secret3</a></div>
     </div>
   </div>
-
-  <!--Row of cards-->
-  <div class="container">    
-    <div class="row">
-      <div class="col-lg-4">
-        <a href="offen.html">
-        <div class="card">
-          <a href="offen.html"><img src="Pics/nedladdning (1).png" alt="Hey" class="card-img-top"></a>
-          <div class="card-title t">
-            <h5>Hey</h5>
-            <div class="card-body">
-              <p>ahahahahahahah</p>
-            </div>
-          </div>
-        </div>
-        </a>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="Pics/nedladdning (2).jpg" alt="Hey" class="card-img-top">
-          <div class="card-title t">
-            <h5>Hey</h5>
-            <div class="card-body">
-              <p>ahahahahahahah</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <img src="Pics/nedladdning (2).png" alt="Hey" class="card-img-top">
-          <div class="card-title t">
-            <h5>Hey</h5>
-            <div class="card-body">
-              <p>ahahahahahahah</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Verry nice js code in html to then change css super efficent LOLZ-->
-  <script>
-
-function Openfunction() {
-    document.getElementById("Menu").style.width="200px";
-    document.getElementById("Menu").style.height="120%"; //Over shoot since i have scroll prevention//
-    document.getElementById("Menu2").style.margin ="0";
-    window.onscroll=function(){window.scrollTo(0, 0);};    //When detected scroll scroll back to 0,0//
-}
-
-function Closefunction() {
-    document.getElementById("Menu").style.width="0px";
-    document.getElementById("Menu").style.height="0px";
-    document.getElementById("Menu2").style.margin ="100px";
-    window.onscroll=null
-}
-
-  </script>
-
-
 </body>

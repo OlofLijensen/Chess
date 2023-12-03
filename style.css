@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .sidbar {
     background: rgb(255, 255, 255);
     position: absolute;
@@ -28,6 +33,23 @@
     color: white;
 }
 
+.OpenButton{
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    border: 2px solid rgb(102, 102, 102);
+}
+
+.card{
+    text-align: center;
+    text-decoration: none;
+}
+.card a{
+    text-decoration: none;
+}
+
 .Title{
     display: grid;
     place-items: center;
@@ -42,20 +64,25 @@
     padding: 20px;
 }
 
-.OpenButton{
-    color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.gameboard{
+    margin: auto;
+    width: 48vw;
+    height: 48vw;
     background-color: black;
-    border: 2px solid rgb(102, 102, 102);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card-img-top{
-    width: 400px;
-    height: 300px;
+.box{
+    width: 6vw;
+    height: 6vw;
+    background-color: pink;
+    display: flex;
 }
 
-.card {
-    z-index: -1;
+.box2{
+    width: 6vw;
+    height: 6vw;
+    background-color: lightblue;
+    display: flex;
 }
