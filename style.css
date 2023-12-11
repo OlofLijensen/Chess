@@ -1,8 +1,7 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-
 .sidbar {
     background: rgb(255, 255, 255);
     position: absolute;
@@ -45,8 +44,10 @@ body{
 }
 
 .card{
+    width: 35%;
     text-align: center;
     text-decoration: none;
+    margin: auto;
 }
 .card a{
     text-decoration: none;
@@ -66,20 +67,46 @@ body{
     padding: 10px;
 }
 
+
+#divright{
+    width: 50%;
+    background-color: aquamarine;
+    float:left;
+    text-align: center;
+}
+#divleft{
+    background-color: bisque;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.rightbutton{
+    font-size: 30px;
+    text-decoration: none;
+}
+.leftbutton{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*då den har en funktion krävs det tydligen att ändra till hover*/
+.rightbutton:hover{
+    cursor: pointer;
+}
+
+
 .gameboard{
     margin: auto;
-    top: 50%;
     width: 48vw;
     height: 48vw;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
 }
-
 .box{
     width: 6vw;
     height: 6vw;
-    background-color: rgb(202, 202, 107);
+    background-color: rgb(255, 186, 221);
     display: flex;
 }
 
@@ -89,14 +116,111 @@ body{
     background-color: rgb(173, 204, 230);
     display: flex;
 }
-
-
-@media screen and (maxwidth: 600px) {
+@media screen and (max-width: 1200px) {
     .gameboard{
         margin: auto;
+        margin-top: 6%;
+        margin-bottom: 6%;
         width: 80vw;
         height: 80vw;
-        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(54, 54, 10);
+        display: flex;
+    }
+    
+    .box2{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(173, 204, 230);
+        display: flex;
+    }
+}
+@media screen and (max-height: 600px){
+    .gameboard{
+        margin: auto;
+        width: 64vw;
+        height: 64vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 8vw;
+        height: 8vw;
+        background-color: rgb(202, 202, 107);
+        display: flex;
+    }
+    
+    .box2{
+        width: 8vw;
+        height: 8vw;
+        background-color: rgb(173, 204, 230);
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gameboard{
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        width: 80vw;
+        height: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(54, 54, 10);
+        display: flex;
+    }
+    
+    .box2{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(173, 204, 230);
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gameboard{
+        margin: auto;
+        margin-top: 12%;
+        margin-bottom: 12%;
+        width: 80vw;
+        height: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(202, 202, 107);
+        display: flex;
+    }
+    
+    .box2{
+        width: 10vw;
+        height: 10vw;
+        background-color: rgb(0, 140, 255);
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gameboard{
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        width: 80vw;
+        height: 80vw;
         display: flex;
         flex-wrap: wrap;
     }
@@ -113,7 +237,5 @@ body{
         background-color: rgb(173, 204, 230);
         display: flex;
     }
-    
-    
 }
 

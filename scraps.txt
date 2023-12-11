@@ -1,0 +1,11 @@
+      <!--vart allt ska-->
+      <div class="row">
+        
+      <div class="justify-content-center gameboardcontainer">
+        <div class="gameboard"></div>
+      </div>
+      <div class="row">
+          <a class="btn-primary leftbutton" href="index.html">back!!!</a>  
+          <a class="btn-primary rightbutton" onclick="resetboard()">restart</a>
+        </div>
+      </div>
