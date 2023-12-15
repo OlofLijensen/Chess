@@ -1,3 +1,4 @@
+//open sidebar//
 function Openfunction() {
     document.getElementById("Menu").style.width="200px";
     document.getElementById("Menu").style.height="120%"; //Over shoot since i have scroll prevention//
