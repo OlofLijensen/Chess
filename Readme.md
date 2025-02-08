@@ -1,1 +1,1 @@
-Chess without rules created using html css and js
+Chess without rules created using html css and js.
